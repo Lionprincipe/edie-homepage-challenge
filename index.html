@@ -11,28 +11,231 @@
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>Edie Homepage | dev challenge</title>
   </head>
   <body>
-    <h1>Edie</h1>
-    <strong>Unhappy with your website?</strong>
-    <h3>We create beautiful and fast web services</h3>
-    <h3>Story, emotion and purpose</h3>
-    <p>
-      We help transform your ideas into real world applications that will
-      outperform your toughest competition and help you achieve your strategic
-      goals in short period of time.
-    </p>
-    <p>Want us to contact you?</p>
-    <h3>We offer high demand services</h3>
-    <h2>UI/UX Design</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac
-      nulla consequat aliquet id quis turpis.
-    </p>
-    <h3>Good design means good business</h3>
-    <em>UX/UI design</em>
-    <h4>Smart home dashboard</h4>
+    <header>
+      <h1 class="brand__name">Edie</h1>
+      <button class="material-icons menu-btn">menu</button>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#" class="header__nav__link">Home</a></li>
+          <li><a href="#" class="header__nav__link">Services</a></li>
+          <li><a href="#" class="header__nav__link">Our Works</a></li>
+          <li><a href="#" class="header__nav__link">Clients</a></li>
+          <li><a href="#" class="header__nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro__text">
+        <h5>Unhappy with your website?</h5>
+        <h3>
+          We create beautiful <br />
+          and fast web services
+        </h3>
+      </section>
+      <section class="hero__banner">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="./images/hero-image-850x348.jpg"
+            sizes=""
+          />
+          <img src="./images/heroImage.jpg" alt="" />
+        </picture>
+      </section>
+      <section class="our__goal">
+        <h3>
+          Story, emotion <br />
+          and purpose
+        </h3>
+        <p>
+          We help transform your ideas into real world applications that will
+          outperform your toughest competition and help you achieve your
+          strategic goals in short period of time.
+        </p>
+        <label class="news-letter">
+          <span>Want us to contact you?</span>
+          <div class="input__wrapper">
+            <input type="email" placeholder="Email" name="" id="" />
+            <button>Join</button>
+          </div>
+        </label>
+      </section>
+
+      <section class="section__services">
+        <h3>We offer high <br />demand services</h3>
+        <ul>
+          <li>
+            <div class="service__card">
+              <div class="service__card__icon service__card__icon__pen">
+                <span class="material-icons"> mode </span>
+              </div>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+          </li>
+          <li>
+            <div class="service__card service__card__active">
+              <div class="service__card__icon service__card__icon__code">
+                <span class="material-icons"> code </span>
+              </div>
+              <h2>Front End</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+          </li>
+          <li>
+            <div class="service__card">
+              <div class="service__card__icon service__card__icon__list">
+                <span class="material-icons"> list </span>
+              </div>
+              <h2>Back End</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+                metus ac nulla consequat aliquet id quis turpis.
+              </p>
+              <button class="btn">Get started</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="section__works">
+        <h3>Good design means good business</h3>
+        <ul>
+          <li>
+            <div class="section__works__card">
+              <picture>
+                <img src="./images/smarthome.jpg" alt="" />
+              </picture>
+              <h6>Full stack application</h6>
+              <h4>Smart home dashboard</h4>
+            </div>
+          </li>
+          <li>
+            <div class="section__works__card">
+              <picture>
+                <img src="./images/onboard.png" alt="" />
+              </picture>
+              <h6>UX/UI design</h6>
+              <h4>Onboard application</h4>
+            </div>
+          </li>
+          <li>
+            <div class="section__works__card">
+              <picture>
+                <img src="./images/booking.png" alt="" />
+              </picture>
+              <h6>Mobile application</h6>
+              <h4>Booking system</h4>
+            </div>
+          </li>
+          <li>
+            <div class="section__works__card">
+              <picture>
+                <img src="./images/juice-product.png" alt="" />
+              </picture>
+              <h6>Front End application</h6>
+              <h4>Juice product homepage</h4>
+            </div>
+          </li>
+        </ul>
+        <a href="#" class="link__read-more"
+          ><span>See more</span>
+          <span class="material-icons"> trending_flat </span></a
+        >
+      </section>
+
+      <section class="section__team">
+        <div class="section__team__info">
+          <h4>Meet the team</h4>
+          <h3>We are chilled and a laidback team</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="section__team__gallery">
+          <ul>
+            <li>
+              <picture><img src="./images/person1.png" alt="" /></picture>
+            </li>
+            <li>
+              <picture><img src="./images/person2.png" alt="" /></picture>
+            </li>
+            <li>
+              <picture><img src="./images/person3.png" alt="" /></picture>
+            </li>
+          </ul>
+        </div>
+        <div class="section__team__testimonial">
+          <p>
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </p>
+          <div class="author">
+            <picture><img src="./images/person4.png" alt="" /></picture>
+            <div>
+              <h2>Carlos Tran</h2>
+              <h4>The Decorate Gatsby</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__container__fluid">
+        <nav class="footer__nav">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Our Works</a></li>
+            <li><a href="">Clients</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="social-network">
+          <h1 class="brand__name">Edie</h1>
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./images/instagram.svg" alt="instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/linkedin.svg" alt="linkedin" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/twitter.svg" alt="twitter" /></a>
+            </li>
+          </ul>
+        </div>
+        <label class="news-letter">
+          <span>Want us to contact you?</span>
+          <div class="input__wrapper">
+            <input type="email" placeholder="Email" name="" id="" />
+            <button>Join</button>
+          </div>
+        </label>
+      </div>
+      <p class="footer__sign">
+        created by
+        <strong
+          ><a href="https://devchallenges.io/portfolio/Lionprincipe"
+            >@Lionprincipe</a
+          ></strong
+        >
+        - devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>
