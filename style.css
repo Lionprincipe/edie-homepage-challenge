@@ -393,7 +393,7 @@ img {
   width: 100%;
 }
 
-.section__team__testimonial p {
+.section__client p {
   font-size: 2.4em;
   line-height: 1.5em;
   max-width: 14.625em;
@@ -401,11 +401,11 @@ img {
   color: #333333;
 }
 
-.section__team__testimonial h2 {
+.section__client h2 {
   font-weight: 500;
 }
 
-.section__team__testimonial h4 {
+.section__client h4 {
   color: #828282;
 }
 
@@ -615,8 +615,9 @@ footer .social-network li:not(:last-child) {
     margin: 0.2em;
   }
   .section__services,
-  section__works,
-  section {
+  .section__works,
+  .section__team,
+  .section__client {
     padding-left: 11.3em;
   }
 
@@ -692,7 +693,7 @@ footer .social-network li:not(:last-child) {
     justify-content: center;
   }
 
-  .section__team .section__team__testimonial {
+  .section__team .section__client {
     width: 100%;
     flex: 1 1 100%;
   }
@@ -707,11 +708,11 @@ footer .social-network li:not(:last-child) {
   .section__team ul li:first-child picture {
     width: 26em;
   }
-  .section__team__testimonial {
+  .section__client {
     padding-top: 19.6em;
   }
 
-  .section__team__testimonial p {
+  .section__client p {
     padding-top: 0;
 
     max-width: 920px;
