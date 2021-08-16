@@ -1,5 +1,5 @@
 
-<h1 align="center">Recipe Blog Challenge</h1>
+<h1 align="center">Edie Homepage Challenge</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
